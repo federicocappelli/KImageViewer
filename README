@@ -1,12 +1,17 @@
+@Overview: KImageViewer is a simple and ready to use Image viewer written in Objective-C Cocoa for Mac OSX, with tools panel for the zoom options, scroll, fit to screen atc..
+@Site and Screenshot: http://www.federicocappelli.net/lib-code/kimageviewer/
+
 @Credits: Federico Cappelli
-@Support: (ahahah support :D) aniway: admin@federicocappelli.net
+@Support: (ahahah support :D) anyway: admin@federicocappelli.net
+
+
 @use:
 
 ----In the superview
 
 -(void)awakeFromNib
 {    
-    //Inizializzo KImageViewer
+    //Init the KImageViewer
     self.imageView = [[KImageViewer alloc] initWithFrame:CGRectMake(256.0, 0, 477.0, 411.0)];
     [self.view addSubview:self.imageView.view];
 }
