@@ -2,11 +2,12 @@
 @Site and Screenshot: http://www.federicocappelli.net/lib-code/kimageviewer/
 
 @Credits: Federico Cappelli
-@Support: (ahahah support :D) anyway: admin@federicocappelli.net
+@Support: (ahahah support :D) anyway: admin (at) federicocappelli.net
 
+@Framework dependencies:
+#import <Quartz/Quartz.h>
 
 @use:
-
 ----In the superview
 
 -(void)awakeFromNib
@@ -18,5 +19,5 @@
 
 ---Show image:
 
-NSString *immPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"jpg" inDirectory:@"Extra/images"];
-[self.imageView setImageWithURL:[NSURL fileURLWithPath:immPath]];
+NSString *immPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"jpg" inDirectory:nil];
+    [imageViewer setImageWithURL:[NSURL fileURLWithPath:immPath]];
