@@ -1,0 +1,17 @@
+@Credits: Federico Cappelli
+@Support: (ahahah support :D) aniway: admin@federicocappelli.net
+@use:
+
+----In the superview
+
+-(void)awakeFromNib
+{    
+    //Inizializzo KImageViewer
+    self.imageView = [[KImageViewer alloc] initWithFrame:CGRectMake(256.0, 0, 477.0, 411.0)];
+    [self.view addSubview:self.imageView.view];
+}
+
+---Show image:
+
+NSString *immPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"jpg" inDirectory:@"Extra/images"];
+[self.imageView setImageWithURL:[NSURL fileURLWithPath:immPath]];
