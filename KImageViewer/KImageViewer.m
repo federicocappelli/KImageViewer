@@ -15,28 +15,28 @@
 #define ZOOM_OUT_FACTOR 0.7071068
 
 /*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) 
-    {
-        // customize the IKImageView...
-        [_imageView setDoubleClickOpensImageEditPanel: YES];
-        [_imageView setCurrentToolMode: IKToolModeMove];
-        [_imageView zoomImageToActualSize: self];
-        [_imageView setDelegate: self];
-        _imageView.editable = YES;
-        _imageView.autoresizes = NO;
-        _imageView.autohidesScrollers = NO;
-        _imageView.hasHorizontalScroller = YES;
-        _imageView.hasVerticalScroller = YES;
-        
-        [[_imageView enclosingScrollView] reflectScrolledClipView:
-         [[_imageView enclosingScrollView] contentView]];
-    }
-    
-    return self;
-}*/
+ - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+ {
+ self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+ if (self) 
+ {
+ // customize the IKImageView...
+ [_imageView setDoubleClickOpensImageEditPanel: YES];
+ [_imageView setCurrentToolMode: IKToolModeMove];
+ [_imageView zoomImageToActualSize: self];
+ [_imageView setDelegate: self];
+ _imageView.editable = YES;
+ _imageView.autoresizes = NO;
+ _imageView.autohidesScrollers = NO;
+ _imageView.hasHorizontalScroller = YES;
+ _imageView.hasVerticalScroller = YES;
+ 
+ [[_imageView enclosingScrollView] reflectScrolledClipView:
+ [[_imageView enclosingScrollView] contentView]];
+ }
+ 
+ return self;
+ }*/
 
 -(id)initWithFrame:(CGRect)frameRect
 {
@@ -85,8 +85,8 @@
     
     if (image)
     {
-        [_imageView setImage: image
-             imageProperties: _imageProperties];
+        [_imageView setImage: image imageProperties: _imageProperties];
+        [_imageView zoomImageToFit: self];
     }
 }
 
@@ -121,23 +121,23 @@
     }
 }
 /*
--(IBAction)showToolbar:(id)sender
-{
-    NSButton * button = (NSButton*)sender;
-    if([button state])
-    {
-        toolbar.frame = CGRectMake(toolbar.frame.origin.x, 
-                                   toolbar.frame.origin.y+toolbar.frame.size.height,
-                                   toolbar.frame.size.width, 
-                                   toolbar.frame.size.height);
-    }
-    else
-    {
-        toolbar.frame = CGRectMake(toolbar.frame.origin.x, 
-                                   toolbar.frame.origin.y-toolbar.frame.size.height,
-                                   toolbar.frame.size.width, 
-                                   toolbar.frame.size.height);
-    }
-}*/
+ -(IBAction)showToolbar:(id)sender
+ {
+ NSButton * button = (NSButton*)sender;
+ if([button state])
+ {
+ toolbar.frame = CGRectMake(toolbar.frame.origin.x, 
+ toolbar.frame.origin.y+toolbar.frame.size.height,
+ toolbar.frame.size.width, 
+ toolbar.frame.size.height);
+ }
+ else
+ {
+ toolbar.frame = CGRectMake(toolbar.frame.origin.x, 
+ toolbar.frame.origin.y-toolbar.frame.size.height,
+ toolbar.frame.size.width, 
+ toolbar.frame.size.height);
+ }
+ }*/
 
 @end
