@@ -8,12 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 #import <Quartz/Quartz.h>
+#import <Foundation/Foundation.h>
 
 @interface KImageViewer : NSViewController
 {
     IBOutlet IKImageView * _imageView;
     IBOutlet NSView * toolbar;
     IBOutlet NSButton * disclosereButton;
+    IBOutlet NSButton * toolbarBGButton;
     
 	NSDictionary * _toolbarDict;
     
@@ -22,8 +24,9 @@
     IKSaveOptions * _saveOptions;
 }
 
--(id)initWithFrame:(CGRect)frameRect;
+-(id)initWithFrame:(NSRect)frameRect;
 -(void)setImageWithURL:(NSURL*)url;
+-(void)setToolBarColor:(NSColor*)aColor;
 
 -(IBAction)doZoom: (id)sender;
 //-(IBAction)showToolbar:(id)sender;
