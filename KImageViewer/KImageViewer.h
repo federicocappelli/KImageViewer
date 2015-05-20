@@ -27,7 +27,6 @@
 -(id)initWithFrame:(NSRect)frameRect;
 -(void)setImageWithURL:(NSURL*)url;
 -(void)setToolBarColor:(NSColor*)aColor;
-
 -(IBAction)doZoom: (id)sender;
-//-(IBAction)showToolbar:(id)sender;
+
 @end
