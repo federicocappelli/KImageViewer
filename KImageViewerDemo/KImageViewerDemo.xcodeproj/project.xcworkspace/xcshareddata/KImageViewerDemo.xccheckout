@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DE9E21E9-D7E8-499F-9864-E779A5CF6337</string>
+	<key>IDESourceControlProjectName</key>
+	<string>KImageViewerDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D11B7745948AE0E69DC0C22B694042062BF6B67B</key>
+		<string>https://github.com/federicocappelli/KImageViewer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>KImageViewerDemo/KImageViewerDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D11B7745948AE0E69DC0C22B694042062BF6B67B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/federicocappelli/KImageViewer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D11B7745948AE0E69DC0C22B694042062BF6B67B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D11B7745948AE0E69DC0C22B694042062BF6B67B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KImageViewer</string>
+		</dict>
+	</array>
+</dict>
+</plist>

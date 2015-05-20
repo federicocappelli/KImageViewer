@@ -7,6 +7,7 @@
 //
 
 #import "KImageViewer.h"
+#import "NSBGView.h"
 
 @implementation KImageViewer
 

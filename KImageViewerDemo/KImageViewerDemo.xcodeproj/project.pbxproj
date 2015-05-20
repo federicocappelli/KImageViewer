@@ -16,6 +16,7 @@
 		F12B199114FFEC8A0013E59E /* KImageViewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = F12B198A14FFEC8A0013E59E /* KImageViewer.xib */; };
 		F12B199414FFED6B0013E59E /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12B199314FFED6B0013E59E /* Quartz.framework */; };
 		F12B199614FFEDF50013E59E /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F12B199514FFEDF50013E59E /* test.jpg */; };
+		F131C3971B0C86390087DB9F /* NSBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = F131C3961B0C86390087DB9F /* NSBGView.m */; };
 		F1D901D314FFEC240065AE00 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D901D214FFEC240065AE00 /* Cocoa.framework */; };
 		F1D901DD14FFEC240065AE00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1D901DB14FFEC240065AE00 /* InfoPlist.strings */; };
 		F1D901DF14FFEC240065AE00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D901DE14FFEC240065AE00 /* main.m */; };
@@ -36,6 +37,8 @@
 		F12B198A14FFEC8A0013E59E /* KImageViewer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KImageViewer.xib; sourceTree = "<group>"; };
 		F12B199314FFED6B0013E59E /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		F12B199514FFEDF50013E59E /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		F131C3951B0C86390087DB9F /* NSBGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSBGView.h; sourceTree = "<group>"; };
+		F131C3961B0C86390087DB9F /* NSBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBGView.m; sourceTree = "<group>"; };
 		F1D901CE14FFEC240065AE00 /* KImageViewerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KImageViewerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D901D214FFEC240065AE00 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F1D901D514FFEC240065AE00 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -80,6 +83,8 @@
 		F12B198014FFEC8A0013E59E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F131C3951B0C86390087DB9F /* NSBGView.h */,
+				F131C3961B0C86390087DB9F /* NSBGView.m */,
 				F12B198114FFEC8A0013E59E /* ScrollViewWorkaround.h */,
 				F12B198214FFEC8A0013E59E /* ScrollViewWorkaround.m */,
 			);
@@ -230,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1D901DF14FFEC240065AE00 /* main.m in Sources */,
+				F131C3971B0C86390087DB9F /* NSBGView.m in Sources */,
 				F1D901E614FFEC240065AE00 /* AppDelegate.m in Sources */,
 				F12B198B14FFEC8A0013E59E /* ScrollViewWorkaround.m in Sources */,
 				F12B199014FFEC8A0013E59E /* KImageViewer.m in Sources */,
